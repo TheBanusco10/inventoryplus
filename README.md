@@ -1,19 +1,30 @@
 # inventory-plus
 
-## Project setup
+## Description
+
+Small project about Inventory Manager. Using Vue.js, Electron.js for desktop App, Express.js and MongoDB.
+
+## Setup
+
+### Installing dependencies
+
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+### Configuration
 
-### Compiles and minifies for production
-```
-npm run build
-```
+- Config MongoDB URL in ``backend/mongodb/connection.js``.
+- Config .env variable VUE_APP_API_BASE with base server URL.
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Run server and App
+
+Run server using:
+
+``npm run nodemon``
+
+Run electron App:
+
+``npm run electron:serve``
+
+Enjoy!
