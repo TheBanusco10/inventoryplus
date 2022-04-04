@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const productModel = require('../mongodb/schemas/products');
+const productModel = require('../mongodb/schemas/Product');
 
 router.get('/products', async (req, res) => {
     const data = await productModel.find();

@@ -17,7 +17,10 @@ app.use(express.urlencoded({extended: true}));
 
 // Routes
 const productsRoute = require('./routes/products');
+const usersRoute = require('./routes/users');
+
 app.use('/api', productsRoute);
+app.use('/api', usersRoute);
 
 app.get('/', (req, res) => {
     res.send('Connected');
